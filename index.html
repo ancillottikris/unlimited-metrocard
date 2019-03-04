@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Unlimited Metrocard</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Is an Unlimited Metrocard Right for You?</h1>
+    <form>
+      <h2>What is Your Favorite Way to Commute?</h2>
+      <p>
+        Select from the dropdown menu.
+      </p>
+      <select name="commuter-options">
+        <option value="Subway">Subway</option>
+        <option value="Bus">Bus</option>
+        <option value="Taxi">Taxi</option>
+        <option value="Rideshare">Rideshare</option>
+        <option value="Cycle">Cycle</option>
+        <option value="Walk">Walk</option>
+      </select>
+    </form>
+
+    <form>
+      <h2>How many times a week do you commute by bus or subway?</h2>
+      <input type="text" list="commute-amount">
+      <datalist id="commute-amount">
+        <option value="One to Three"></option>
+        <option value="Four to Six"></option>
+        <option value="Seven to Nine"></option>
+        <option value="Ten or More"></option>
+      </datalist>
+    </form>
+
+    <form id="commuter-radio">
+      <h2>How long is your commute?</h2>
+
+      <label class="block"><input type="radio" name="time" value="15"> 15 Minutes
+        <label class="block"><input type="radio" name="time" value="16-30"> 16-30 Minutes
+          <label class="block"><input type="radio" name="time" value="31-45"> 31-45 Minutes
+            <label class="block"><input type="radio" name="time" value="46-1"> 46-1 hour
+              <label class="block"><input type="radio" name="time" value="over-1"> Over one hour
+    </form>
+
+  </body>
+
+</html>
